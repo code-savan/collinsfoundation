@@ -688,7 +688,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <h4 className="font-roboto font-bold mb-1">Phone</h4>
-                  <p className="text-gray-400 font-inter font-medium text-[15px]">+234 8059000097</p>
+                  <p className="text-gray-400 font-inter font-medium text-[15px]">+2348059000097</p>
                 </div>
               </div>
             </div>
