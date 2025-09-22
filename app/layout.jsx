@@ -17,6 +17,23 @@ const roboto = Roboto({
 export const metadata = {
   title: "Collins Onyeaji Foundation | Education, Agriculture & Healthcare",
   description: "Empowering remote communities in Eastern Nigeria through education, sustainable agriculture, and quality healthcare initiatives.",
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
+  openGraph: {
+    title: "Collins Onyeaji Foundation | Education, Agriculture & Healthcare",
+    description: "Empowering remote communities in Eastern Nigeria through education, sustainable agriculture, and quality healthcare initiatives.",
+    images: ['/logo.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Collins Onyeaji Foundation | Education, Agriculture & Healthcare",
+    description: "Empowering remote communities in Eastern Nigeria through education, sustainable agriculture, and quality healthcare initiatives.",
+    images: ['/logo.png'],
+  },
 };
 
 export default function RootLayout({ children }) {
