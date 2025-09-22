@@ -23,7 +23,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link href="/">
             <Image
-              src="/logogreen.png"
+              src="/logo.png"
               alt="Collins Onyeaji Foundation"
               width={180}
               height={180}
@@ -678,7 +678,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <h4 className="font-roboto font-bold mb-1">Email</h4>
-                  <p className="text-gray-400 font-inter font-medium text-[15px]">collins@britishauc.com</p>
+                  <p className="text-gray-400 font-inter font-medium text-[15px]">info@collinsonyeaji.org</p>
                 </div>
               </div>
 
@@ -688,7 +688,7 @@ export default function Home() {
                 </svg>
                 <div>
                   <h4 className="font-roboto font-bold mb-1">Phone</h4>
-                  <p className="text-gray-400 font-inter font-medium text-[15px]">+234 803 593 3363</p>
+                  <p className="text-gray-400 font-inter font-medium text-[15px]">+234 8059000097</p>
                 </div>
               </div>
             </div>
