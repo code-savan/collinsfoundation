@@ -537,6 +537,12 @@ export default function Home() {
                 alt: "Collins Onyeaji",
               },
               {
+                name: "Adanma Judith Aloka",
+                role: "Programme Coordinator (Southeast)",
+                image: "/judith.jpeg",
+                alt: "Adanma Judith Aloka",
+              },
+              {
                 name: "Precious Amaka Isoh",
                 role: "Legal Adviser",
                 image: "/precious.webp",
@@ -552,7 +558,7 @@ export default function Home() {
             ];
 
             return (
-              <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
                 {teamMembers.map((member, idx) => (
                   <div
                     key={member.name}
@@ -577,10 +583,10 @@ export default function Home() {
                     </div>
                     {/* Card Content */}
                     <div className="flex flex-col items-center mt-8 z-10">
-                      <h3 className="text-2xl font-roboto font-bold text-gray-900 mb-1 group-hover:text-[#8dc220] transition-colors duration-200">
+                      <h3 className="text-xl font-roboto font-bold text-gray-900 mb-1 group-hover:text-[#8dc220] transition-colors duration-200 text-center">
                         {member.name}
                       </h3>
-                      <p className="text-base text-gray-600 font-inter mb-4 tracking-wide">
+                      <p className="text-gray-600 font-inter mb-4 tracking-wide text-center text-sm">
                         {member.role}
                       </p>
                       {/* Optional: Social icons or short bio */}
