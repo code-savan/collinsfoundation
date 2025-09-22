@@ -112,7 +112,7 @@ const HeroSection = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/9823012/pexels-photo-9823012.jpeg?_gl=1*483pxb*_ga*OTY5OTMzMTY2LjE3NTc0MTYyODg.*_ga_8JE65Q40S6*czE3NTc0MTYyODckbzEkZzEkdDE3NTc0MTY1ODQkajU5JGwwJGgw',
+      image: '/schoolhero.jpg',
       title: 'Education for All',
       subtitle: 'Building Tomorrow\'s Leaders',
       description: 'Providing quality education to remote communities'
@@ -214,7 +214,7 @@ export default function Home() {
           {/* Image Section - No padding */}
           <div className="relative h-[600px] md:h-auto">
             <img
-              src="https://images.pexels.com/photos/27950725/pexels-photo-27950725.jpeg?_gl=1*1fk52gi*_ga*OTY5OTMzMTY2LjE3NTc0MTYyODg.*_ga_8JE65Q40S6*czE3NTc0MTYyODckbzEkZzEkdDE3NTc0MTY1ODQkajU5JGwwJGgw"
+              src="/about.jpg"
               alt="Foundation Work"
               className="w-full h-full object-cover"
             />
