@@ -621,32 +621,54 @@ export default function Home() {
 
           <div className="bg-white rounded-3xl p-10 max-w-2xl mx-auto shadow-2xl">
             <h3 className="text-2xl font-roboto font-bold text-gray-900 mb-8">
-              Choose Your Impact
+              Donate via Bank Transfer
             </h3>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <button className="bg-gradient-to-r from-[#8dc220] to-[#7bb01c] text-white px-6 py-4 rounded-xl font-medium hover:shadow-lg transition-all transform hover:scale-105">
-                One-time Donation
-              </button>
-              <button className="bg-white border-2 border-[#8dc220] text-[#8dc220] px-6 py-4 rounded-xl font-medium hover:bg-[#8dc220] hover:text-white transition-all">
-                Monthly Giving
-              </button>
+            <p className="text-gray-700 font-inter mb-6 text-base text-center">
+              For now, please send your donation directly to our bank account below. Thank you for supporting our mission!
+            </p>
+            <div className="bg-gray-50 rounded-2xl p-6 mb-8 flex flex-col gap-4 items-center border border-gray-200">
+              <div className="w-full flex flex-col sm:flex-row sm:items-center gap-2">
+                <span className="font-semibold text-gray-800 w-40">Account Name:</span>
+                <span className="font-mono text-gray-700 flex-1 select-all" id="accountName">Collins Onyeaji</span>
+                <button
+                  className="ml-2 px-3 py-1 text-xs bg-[#8dc220] text-white rounded hover:bg-[#7bb01c] transition"
+                  onClick={() => {
+                    navigator.clipboard.writeText('Collins Onyeaji');
+                  }}
+                  type="button"
+                >
+                  Copy
+                </button>
+              </div>
+              <div className="w-full flex flex-col sm:flex-row sm:items-center gap-2">
+                <span className="font-semibold text-gray-800 w-40">Account Number:</span>
+                <span className="font-mono text-gray-700 flex-1 select-all" id="accountNumber">3101143261</span>
+                <button
+                  className="ml-2 px-3 py-1 text-xs bg-[#8dc220] text-white rounded hover:bg-[#7bb01c] transition"
+                  onClick={() => {
+                    navigator.clipboard.writeText('3101143261');
+                  }}
+                  type="button"
+                >
+                  Copy
+                </button>
+              </div>
+              <div className="w-full flex flex-col sm:flex-row sm:items-center gap-2">
+                <span className="font-semibold text-gray-800 w-40">Bank Name:</span>
+                <span className="font-mono text-gray-700 flex-1 select-all" id="bankName">First Bank Nigeria</span>
+                <button
+                  className="ml-2 px-3 py-1 text-xs bg-[#8dc220] text-white rounded hover:bg-[#7bb01c] transition"
+                  onClick={() => {
+                    navigator.clipboard.writeText('First Bank Nigeria');
+                  }}
+                  type="button"
+                >
+                  Copy
+                </button>
+              </div>
             </div>
-
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <button className="bg-gray-50 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                $25
-              </button>
-              <button className="bg-gray-50 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                $50
-              </button>
-              <button className="bg-gray-50 px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                $100
-              </button>
-            </div>
-
-            <p className="text-gray-500 font-inter text-sm">
-              Secure donation gateway • 100% goes to communities • Tax deductible
+            <p className="text-gray-500 font-inter text-sm text-center">
+              100% of your donation goes to the communities we serve. Thank you for your generosity!
             </p>
           </div>
         </div>
