@@ -537,10 +537,10 @@ export default function Home() {
                 alt: "Collins Onyeaji",
               },
               {
-                name: "Adanma Judith Aloka",
+                name: "Adamma Judith Aloka",
                 role: "Programme Coordinator (Southeast)",
                 image: "/judith.jpeg",
-                alt: "Adanma Judith Aloka",
+                alt: "Adamma Judith Aloka",
               },
               {
                 name: "Precious Amaka Isoh",
