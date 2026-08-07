@@ -1,4 +1,5 @@
 import { Inter, Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,6 +16,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://collinsonyeaji.org'),
   title: "Collins Onyeaji Foundation | Education, Agriculture & Healthcare",
   description: "Empowering remote communities in Eastern Nigeria through education, sustainable agriculture, and quality healthcare initiatives.",
   icons: {
@@ -43,6 +45,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${roboto.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

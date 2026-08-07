@@ -1,16 +1,24 @@
+'use client';
 import React from 'react'
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Team = () => {
   return (
     <section id="team" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#8dc220] font-inter text-sm uppercase tracking-wider">Leadership</span>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <span className="text-[#8dc220] font-inter text-sm font-semibold uppercase tracking-wider">Leadership</span>
             <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-2">
               Meet Our Team
             </h2>
-          </div>
+          </motion.div>
 
           {/*
             Improved Team Cards UI with dynamic content mapping.
@@ -48,8 +56,12 @@ const Team = () => {
             return (
               <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
                 {teamMembers.map((member, idx) => (
-                  <div
+                  <motion.div
                     key={member.name}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
                     className="relative flex flex-col items-center bg-white/80 backdrop-blur-lg p-10 pt-15 rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
                   >
                     {/* Decorative background accent */}
@@ -82,7 +94,7 @@ const Team = () => {
                         <span className="inline-block w-8 h-1 rounded bg-[#8dc220]"></span>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             );
