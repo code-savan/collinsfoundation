@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Stories from './components/Stories';
@@ -16,12 +15,14 @@ import Donation from './components/Donation'
 import Newsletter from './components/Newsletter'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { campaigns, donationTiers, impactMetrics, donorProof } from './data/fundraising';
 
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Nav />
+      <main>
       {/* Hero Section - Modern Grid */}
       <Hero />
       {/* Stories From the Field - Real Video Footage */}
@@ -54,6 +55,7 @@ export default function Home() {
 
       {/* Footer */}
         <Footer />
+      </main>
     </div>
   );
 }
