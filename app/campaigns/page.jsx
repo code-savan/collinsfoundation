@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { campaigns } from '../data/fundraising';
 
 export default function CampaignsPage() {
@@ -12,7 +13,7 @@ export default function CampaignsPage() {
           {campaigns.map((campaign) => {
             const progress = Math.round((campaign.raised / campaign.goal) * 100);
             return (
-              <article key={campaign.slug} className="rounded-3xl border bg-white p-6 shadow-sm">
+              <Link key={campaign.slug} href={`/campaigns/${campaign.slug}`} className="rounded-3xl border bg-white p-6 shadow-sm block hover:shadow-md transition">
                 <div className="text-xs uppercase tracking-wider text-[#5d8708] font-semibold mb-3">{campaign.status}</div>
                 <h2 className="text-2xl font-bold mb-2">{campaign.title}</h2>
                 <p className="text-gray-600 mb-5">{campaign.summary}</p>
@@ -26,7 +27,7 @@ export default function CampaignsPage() {
                   </div>
                   <div className="text-sm font-semibold text-[#5d8708]">{progress}% funded</div>
                 </div>
-              </article>
+              </Link>
             );
           })}
         </div>
