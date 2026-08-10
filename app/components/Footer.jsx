@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -22,19 +23,20 @@ const Footer = () => {
           <div>
             <h4 className="font-roboto font-bold text-sm uppercase tracking-wider text-[#8dc220] mb-4">Explore</h4>
             <ul className="space-y-2.5 text-gray-400 font-inter text-sm">
-              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#focus-areas" className="hover:text-white transition-colors">Our Mandate</a></li>
-              <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
-              <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
-              <li><a href="#team" className="hover:text-white transition-colors">Team</a></li>
+              <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/campaigns" className="hover:text-white transition-colors">Campaigns</Link></li>
+              <li><Link href="/donate" className="hover:text-white transition-colors">Donate</Link></li>
+              <li><a href="/#about" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/#team" className="hover:text-white transition-colors">Team</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-roboto font-bold text-sm uppercase tracking-wider text-[#8dc220] mb-4">Get Involved</h4>
             <ul className="space-y-2.5 text-gray-400 font-inter text-sm">
-              <li><a href="#donation" className="hover:text-white transition-colors">Donate</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link href="/donate" className="hover:text-white transition-colors">Donate Now</Link></li>
+              <li><Link href="/campaigns/back-to-school" className="hover:text-white transition-colors">Featured Campaign</Link></li>
+              <li><a href="/#contact" className="hover:text-white transition-colors">Contact Us</a></li>
               <li><a href="mailto:info@collinsonyeaji.org" className="hover:text-white transition-colors">Partner With Us</a></li>
             </ul>
           </div>
