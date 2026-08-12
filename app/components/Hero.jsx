@@ -97,7 +97,7 @@ const Hero = () => {
               <p className="text-[#8dc220] font-inter text-sm font-semibold uppercase tracking-wider mb-3">
                 {slides[currentSlide].subtitle}
               </p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-roboto font-bold mb-5 leading-[1.05]">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-roboto font-bold mb-5 leading-[1.05] tracking-tight">
                 {slides[currentSlide].title}
               </h1>
               <p className="text-lg md:text-xl font-inter mb-8 text-gray-200 max-w-lg">

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Mission = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-32 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -13,8 +13,8 @@ const Mission = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <span className="text-[#8dc220] font-inter text-sm font-semibold uppercase tracking-wider">Our Purpose</span>
-        <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-2">
+        <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Our Purpose</span>
+        <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-3 tracking-tight">
           Mission & Values
         </h2>
       </motion.div>

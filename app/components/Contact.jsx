@@ -25,12 +25,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-black text-white">
+    <section id="contact" className="bg-black text-white py-32">
       <div className="grid md:grid-cols-2">
         {/* Contact Info + Form */}
         <div className="p-8 sm:p-12 md:p-16 lg:p-20 flex flex-col justify-center">
-          <span className="text-[#8dc220] font-inter text-sm uppercase tracking-wider">Contact</span>
-          <h2 className="text-4xl md:text-5xl font-roboto font-bold mb-2 mt-2">
+          <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Contact</span>
+          <h2 className="text-4xl md:text-5xl font-roboto font-bold mb-2 mt-3 tracking-tight">
             Get In Touch
           </h2>
           <p className="text-[15px] text-gray-400 font-inter mb-10">

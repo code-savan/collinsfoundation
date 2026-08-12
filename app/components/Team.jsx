@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Team = () => {
   return (
-    <section id="team" className="py-24 bg-white">
+    <section id="team" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -14,8 +14,8 @@ const Team = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-[#8dc220] font-inter text-sm font-semibold uppercase tracking-wider">Leadership</span>
-            <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-2">
+            <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Leadership</span>
+            <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-3 tracking-tight">
               Meet Our Team
             </h2>
           </motion.div>

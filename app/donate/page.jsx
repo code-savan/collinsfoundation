@@ -4,9 +4,9 @@ import { campaigns, donationTiers, impactMetrics, donorProof } from '../data/fun
 export default function DonatePage() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <p className="text-[#8dc220] font-semibold uppercase tracking-wider text-sm">Donate</p>
-        <h1 className="text-4xl md:text-6xl font-bold mt-3 mb-5">Fund the work that changes lives.</h1>
+      <section className="max-w-6xl mx-auto px-6 py-32">
+        <p className="text-[#8dc220] font-semibold uppercase tracking-[0.2em] text-xs">Donate</p>
+        <h1 className="text-4xl md:text-6xl font-bold mt-3 mb-5 tracking-tight">Fund the work that changes lives.</h1>
         <p className="text-gray-600 max-w-2xl text-lg mb-10">Every donation supports education, agriculture, and healthcare across Eastern Nigeria.</p>
 
         <div className="grid md:grid-cols-4 gap-4 mb-12">

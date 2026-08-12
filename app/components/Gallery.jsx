@@ -20,17 +20,17 @@ const Gallery = () => {
   const prev = (e) => { e.stopPropagation(); setActiveIndex((i) => (i - 1 + galleryItems.length) % galleryItems.length); };
 
   return (
-    <section id="gallery" className="py-24 bg-gray-50">
+    <section id="gallery" className="py-32 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-16"
         >
-          <span className="text-[#8dc220] font-inter text-sm uppercase tracking-wider">In the Field</span>
-          <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-2 mb-4">
+          <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">In the Field</span>
+          <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-3 tracking-tight">
             Gallery
           </h2>
           <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto">

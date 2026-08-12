@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-gray-50">
+    <section id="projects" className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -13,8 +13,8 @@ const Projects = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-[#8dc220] font-inter text-sm font-semibold uppercase tracking-wider">Our Work</span>
-            <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-2">
+            <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Our Work</span>
+            <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-3 tracking-tight">
               Active Projects
             </h2>
           </motion.div>

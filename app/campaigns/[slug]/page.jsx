@@ -11,9 +11,9 @@ export default function CampaignDetailPage({ params }) {
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <p className="text-[#8dc220] font-semibold uppercase tracking-wider text-sm">Campaign</p>
-        <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4">{campaign.title}</h1>
+      <section className="max-w-5xl mx-auto px-6 py-32">
+        <p className="text-[#8dc220] font-semibold uppercase tracking-[0.2em] text-xs">Campaign</p>
+        <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4 tracking-tight">{campaign.title}</h1>
         <p className="text-gray-600 text-lg mb-8 max-w-3xl">{campaign.summary}</p>
 
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 mb-8">

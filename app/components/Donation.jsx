@@ -73,15 +73,15 @@ const Donation = () => {
   }, [email, finalAmount, name, frequency, subscribeNews, paystackReady]);
 
   return (
-    <section id="donation" className="relative py-24 bg-gradient-to-br from-[#5d8708] via-[#4a7006] to-[#2f4c02] overflow-hidden">
+    <section id="donation" className="relative py-32 bg-gradient-to-br from-[#5d8708] via-[#4a7006] to-[#2f4c02] overflow-hidden">
       <div className="absolute inset-0 bg-dot-grid opacity-10" />
       <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#8dc220]/20 rounded-full blur-3xl" />
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-[#007acc]/20 rounded-full blur-3xl" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-14">
-          <span className="text-[#d4f27e] font-inter text-sm font-semibold uppercase tracking-wider">Make an Impact</span>
-          <h2 className="text-4xl md:text-5xl font-roboto font-bold text-white mt-2 mb-6">Be Part of the Change</h2>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
+          <span className="text-[#d4f27e] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Make an Impact</span>
+          <h2 className="text-4xl md:text-5xl font-roboto font-bold text-white mt-3 mb-6 tracking-tight">Be Part of the Change</h2>
           <p className="text-xl text-white/90 font-inter max-w-2xl mx-auto">Your support directly funds education, agriculture, and healthcare for communities across Eastern Nigeria.</p>
         </motion.div>
 

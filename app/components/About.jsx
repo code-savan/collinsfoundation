@@ -46,26 +46,13 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 className="text-xl font-roboto font-bold text-gray-900 mb-4">
+            <div>
+              <h3 className="text-xl font-roboto font-bold text-gray-900 mb-3">
                 Our Impact
               </h3>
-              <div className="flex items-center gap-4 justify-between w-full">
-                <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-roboto font-bold text-[#8dc220]">10,000+</div>
-                  <div className="text-xs font-semibold text-gray-600 font-inter mt-1">Pupils reached</div>
-                </div>
-                <div className="w-px h-10 bg-gray-200" />
-                <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-roboto font-bold text-[#007acc]">1,000+</div>
-                  <div className="text-xs font-semibold text-gray-600 font-inter mt-1">Farmers reached</div>
-                </div>
-                <div className="w-px h-10 bg-gray-200" />
-                <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-roboto font-bold text-[#f9a825]">500+</div>
-                  <div className="text-xs font-semibold text-gray-600 font-inter mt-1">Medical interventions</div>
-                </div>
-              </div>
+              <p className="text-gray-600 font-inter leading-relaxed">
+                Over 10,000 pupils reached, 1,000+ farmers trained, and 500+ medical interventions delivered across 95 LGAs in Eastern Nigeria.
+              </p>
             </div>
 
             <div className="pt-2">
@@ -75,7 +62,7 @@ const About = () => {
               >
                 Learn More
                 <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
