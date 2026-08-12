@@ -1,113 +1,125 @@
 'use client';
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+const teamMembers = [
+  {
+    name: "Collins Onyeaji",
+    role: "Founder & Executive Director",
+    image: "/collins.jpeg",
+    alt: "Collins Onyeaji",
+  },
+  {
+    name: "Adamma Judith Aloka",
+    role: "Programme Coordinator (Southeast)",
+    image: "/judith.jpeg",
+    alt: "Adamma Judith Aloka",
+  },
+  {
+    name: "Precious Amaka Isoh",
+    role: "Legal Adviser",
+    image: "/precious.webp",
+    alt: "Precious Amaka Isoh",
+  },
+  {
+    name: "Hope Gregory",
+    role: "Group HR/Admin",
+    image: "/hope.jpeg",
+    alt: "Hope Gregory",
+  },
+];
+
 const Team = () => {
   return (
-    <section id="team" className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-[#8dc220] font-inter text-xs font-semibold uppercase tracking-[0.2em]">Leadership</span>
-            <h2 className="text-4xl md:text-5xl font-roboto font-bold text-gray-900 mt-3 tracking-tight">
-              Meet Our Team
-            </h2>
-          </motion.div>
+    <section id="team" className="py-32 bg-gray-50 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-accent-subtle rounded-full blur-3xl opacity-30" />
 
-          {/*
-            Improved Team Cards UI with dynamic content mapping.
-            Modern, elevated card design with subtle glassmorphism, hover effects, and unified color theme.
-          */}
-          {(() => {
-            const teamMembers = [
-              {
-                name: "Collins Onyeaji",
-                role: "Founder & Executive Director",
-                image: "/collins.jpeg",
-                alt: "Collins Onyeaji",
-              },
-              {
-                name: "Adamma Judith Aloka",
-                role: "Programme Coordinator (Southeast)",
-                image: "/judith.jpeg",
-                alt: "Adamma Judith Aloka",
-              },
-              {
-                name: "Precious Amaka Isoh",
-                role: "Legal Adviser",
-                image: "/precious.webp",
-                alt: "Precious Amaka Isoh",
-              },
-              {
-                name: "Hope Gregory",
-                role: "Group HR/Admin",
-                image: "/hope.jpeg",
-                alt: "Hope Gregory",
-              },
-              // Add more team members here if needed
-            ];
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
+        >
+          <span className="inline-block text-accent-dark font-inter text-xs font-semibold uppercase tracking-[0.2em] mb-4 px-4 py-1.5 rounded-full bg-accent-subtle border border-accent/20">
+            Leadership
+          </span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-roboto font-bold text-gray-900 mt-4 tracking-tight text-balance">
+            Meet Our Team
+          </h2>
+          <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto mt-6">
+            Dedicated professionals driving our mission forward
+          </p>
+        </motion.div>
 
-            return (
-              <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-                {teamMembers.map((member, idx) => (
-                  <motion.div
-                    key={member.name}
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: idx * 0.1 }}
-                    className="relative flex flex-col items-center bg-white/80 backdrop-blur-lg p-10 pt-15 rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
-                  >
-                    {/* Decorative background accent */}
-                    <div className="absolute inset-0 pointer-events-none">
-                      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-40 h-40 bg-[#8dc220]/10 rounded-full blur-2xl opacity-70"></div>
-                      <div className="absolute bottom-0 right-0 w-24 h-24 bg-[#8dc220]/10 rounded-full blur-xl opacity-60"></div>
-                    </div>
-                    {/* Profile Image */}
-                    <div className="mx-auto">
-                      <div className="w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-100 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                        <Image
-                          src={member.image}
-                          alt={member.alt}
-                          width={128}
-                          height={128}
-                          className="w-full h-full object-cover object-top"
-                        />
-                      </div>
-                    </div>
-                    {/* Card Content */}
-                    <div className="flex flex-col items-center mt-8 z-10">
-                      <h3 className="text-xl font-roboto font-bold text-gray-900 mb-1 group-hover:text-[#8dc220] transition-colors duration-200 text-center">
-                        {member.name}
-                      </h3>
-                      <p className="text-gray-600 font-inter mb-4 tracking-wide text-center text-sm">
-                        {member.role}
-                      </p>
-                      {/* Optional: Social icons or short bio */}
-                      <div className="flex gap-3 mt-2 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="inline-block w-8 h-1 rounded bg-[#8dc220]"></span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {teamMembers.map((member, idx) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className="group relative"
+            >
+              <div className="relative bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                {/* Gradient accent on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-subtle to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                {/* Profile Image */}
+                <div className="relative mx-auto mb-6">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-500">
+                    <Image
+                      src={member.image}
+                      alt={member.alt}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+
+                  {/* Decorative ring */}
+                  <div className="absolute inset-0 rounded-full border-2 border-accent/20 scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+
+                {/* Content */}
+                <div className="relative text-center">
+                  <h3 className="text-xl font-roboto font-bold text-gray-900 mb-2 group-hover:text-accent-dark transition-colors duration-300">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-600 font-inter text-sm mb-4">
+                    {member.role}
+                  </p>
+
+                  {/* Decorative line */}
+                  <div className="w-12 h-0.5 bg-accent mx-auto rounded-full group-hover:w-20 transition-all duration-500" />
+                </div>
+
+                {/* Corner decoration */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-accent-subtle rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-            );
-          })()}
-
-          <div className="text-center mt-12">
-            <p className="text-base text-gray-600 font-inter max-w-2xl mx-auto">
-              Our dedicated team combines expertise with compassion, working tirelessly to create lasting impact in the communities we serve.
-            </p>
-          </div>
+            </motion.div>
+          ))}
         </div>
-      </section>
-  )
-}
 
-export default Team
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-center mt-16"
+        >
+          <p className="text-gray-600 font-inter text-base max-w-2xl mx-auto">
+            Our dedicated team combines expertise with compassion, working tirelessly to create lasting impact in the communities we serve.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;

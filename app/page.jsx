@@ -23,38 +23,52 @@ import { campaigns, donationTiers, impactMetrics, donorProof } from './data/fund
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Nav />
       <main>
-      {/* Hero Section */}
-      <Hero />
-      {/* Partner Logo Strip */}
+        {/* Hero Section */}
+        <Hero />
+
+        {/* Partner Logo Strip */}
         <LogoStrip />
-      {/* Stories From the Field - Real Video Footage */}
+
+        {/* Stories From the Field - Real Video Footage */}
         <Stories />
-      {/* Impact Stats Bar - Dark Section */}
+
+        {/* Impact Stats Bar - Dark Section */}
         <StatsBar />
-      {/* About Section */}
+
+        {/* About Section */}
         <About />
-      {/* Mission & Values */}
+
+        {/* Mission & Values */}
         <Mission />
-      {/* Focus Areas - Bento Grid */}
+
+        {/* Focus Areas - Bento Grid */}
         <Focus />
-      {/* Projects Section */}
+
+        {/* Projects Section */}
         <Projects />
-      {/* Gallery Section */}
+
+        {/* Gallery Section */}
         <Gallery />
-      {/* Team Section */}
+
+        {/* Team Section */}
         <Team />
-      {/* How Your Donation Works - 3 Step Flow */}
+
+        {/* How Your Donation Works - 3 Step Flow */}
         <HowItWorks />
-      {/* Donation Section */}
+
+        {/* Donation Section */}
         <Donation />
-      {/* Newsletter / Donor Capture */}
+
+        {/* Newsletter / Donor Capture */}
         <Newsletter />
-      {/* Contact Section */}
+
+        {/* Contact Section */}
         <Contact />
-      {/* Footer */}
+
+        {/* Footer */}
         <Footer />
       </main>
     </div>
