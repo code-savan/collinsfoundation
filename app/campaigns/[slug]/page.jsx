@@ -49,7 +49,7 @@ export default function CampaignDetailPage({ params }) {
               <div className="rounded-2xl bg-white/5 p-4 border border-white/5">2. Connect donor feed</div>
               <div className="rounded-2xl bg-white/5 p-4 border border-white/5">3. Add sharing CTA</div>
             </div>
-            <Link href="/donate" className="mt-6 inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 font-semibold text-white w-full hover:bg-accent-dark transition-colors">Preview donation page</Link>
+            <Link href="/donate" className="mt-6 inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 font-semibold text-white w-full hover:bg-accent-dark transition-colors">Preview donation page</Link>
           </aside>
         </div>
 

@@ -42,7 +42,7 @@ const Mission = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="group relative bg-white rounded-3xl p-10 lg:p-12 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden"
+            className="group relative bg-white rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden"
           >
             {/* Gradient accent */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent via-accent-light to-accent" />
@@ -73,7 +73,7 @@ const Mission = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="group relative bg-white rounded-3xl p-10 lg:p-12 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden"
+            className="group relative bg-white rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden"
           >
             {/* Gradient accent */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary via-secondary-light to-secondary" />

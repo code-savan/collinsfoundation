@@ -106,7 +106,7 @@ const Donation = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl"
+            className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl"
           >
             {/* Frequency toggle */}
             <div className="flex bg-gray-100 rounded-full p-1.5 mb-8 w-fit">
@@ -168,21 +168,29 @@ const Donation = () => {
 
             {/* Donor details */}
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              <input
-                type="text"
-                placeholder="Full name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-accent outline-none font-inter text-gray-800 transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="Email address"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-accent outline-none font-inter text-gray-800 transition-colors"
-              />
+              <div>
+                <label className="mb-2 block text-sm font-semibold text-gray-800" htmlFor="donor-name">Full name</label>
+                <input
+                  id="donor-name"
+                  type="text"
+                  placeholder="Jane Doe"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-accent outline-none font-inter text-gray-800 transition-colors"
+                />
+              </div>
+              <div>
+                <label className="mb-2 block text-sm font-semibold text-gray-800" htmlFor="donor-email">Email address</label>
+                <input
+                  id="donor-email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3.5 rounded-xl border-2 border-gray-200 focus:border-accent outline-none font-inter text-gray-800 transition-colors"
+                />
+              </div>
             </div>
 
             {/* Newsletter checkbox */}

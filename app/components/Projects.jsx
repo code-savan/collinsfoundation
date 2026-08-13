@@ -69,7 +69,7 @@ const Projects = () => {
                   className="group relative bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
                 >
                   {/* Timeline dot */}
-                  <div className="absolute -left-[42px] top-10 w-4 h-4 rounded-full bg-accent border-4 border-gray-50 hidden md:block" />
+                  <div className="absolute -left-8 top-8 w-4 h-4 rounded-full bg-accent border-4 border-gray-50 hidden md:block" />
 
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                     <div className="flex-1">

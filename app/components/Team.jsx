@@ -100,7 +100,7 @@ const Team = () => {
                 </div>
 
                 {/* Corner decoration */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-accent-subtle rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 right-0 w-16 h-16 bg-accent-subtle rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
           ))}

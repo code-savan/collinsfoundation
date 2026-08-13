@@ -35,7 +35,7 @@ const Newsletter = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="bg-white rounded-3xl p-10 md:p-16 text-center border border-gray-100 shadow-xl relative overflow-hidden"
+          className="bg-white rounded-3xl p-8 md:p-16 text-center border border-gray-100 shadow-xl relative overflow-hidden"
         >
           {/* Gradient accent */}
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-accent via-accent-light to-accent" />
@@ -46,7 +46,7 @@ const Newsletter = () => {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2, type: 'spring' }}
-            className="w-20 h-20 rounded-3xl bg-accent-subtle flex items-center justify-center mx-auto mb-8"
+            className="w-16 h-16 rounded-3xl bg-accent-subtle flex items-center justify-center mx-auto mb-8"
           >
             <svg className="w-10 h-10 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -60,8 +60,11 @@ const Newsletter = () => {
             Join our newsletter for stories from the field, project updates, and ways to help — no spam, ever.
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="mx-auto max-w-md text-left">
+            <label className="mb-2 block text-sm font-semibold text-gray-800" htmlFor="newsletter-email">Email address</label>
+            <div className="flex flex-col gap-3 sm:flex-row">
             <input
+              id="newsletter-email"
               type="email"
               required
               placeholder="you@example.com"
@@ -78,6 +81,7 @@ const Newsletter = () => {
             >
               {status === 'loading' ? 'Joining…' : 'Subscribe'}
             </motion.button>
+            </div>
           </form>
 
           {status === 'success' && (

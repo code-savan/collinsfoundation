@@ -69,7 +69,7 @@ const HowItWorks = () => {
             >
               {/* Step number badge */}
               <div className="relative inline-flex mb-8">
-                <div className="relative w-20 h-20 rounded-3xl bg-white border-2 border-accent/20 flex items-center justify-center shadow-lg group-hover:border-accent/40 group-hover:shadow-xl transition-all duration-500">
+                <div className="relative w-16 h-16 rounded-3xl bg-white border-2 border-accent/20 flex items-center justify-center shadow-lg group-hover:border-accent/40 group-hover:shadow-xl transition-all duration-500">
                   <svg className="w-9 h-9 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {step.icon}
                   </svg>

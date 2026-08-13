@@ -43,7 +43,7 @@ const stats = [
 
 const StatsBar = () => {
   return (
-    <section className="py-32 bg-gradient-to-br from-ink via-ink-light to-ink relative overflow-hidden">
+    <section id="impact" className="py-32 bg-gradient-to-br from-ink via-ink-light to-ink relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-dot-grid-light opacity-20" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl" />
@@ -107,7 +107,7 @@ const StatsBar = () => {
                 </div>
 
                 {/* Decorative corner */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-white/5 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-white/5 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
           ))}

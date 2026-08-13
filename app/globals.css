@@ -10,12 +10,12 @@
   --border-strong: #d4d4d4;
 
   /* Brand colors */
-  --accent: #8dc220;
-  --accent-light: #a8d93f;
-  --accent-dark: #5d8708;
-  --accent-darker: #3d5a05;
-  --accent-subtle: rgba(141, 194, 32, 0.08);
-  --accent-glow: rgba(141, 194, 32, 0.3);
+  --accent: #557a07;
+  --accent-light: #8dc220;
+  --accent-dark: #3d5a05;
+  --accent-darker: #2f4604;
+  --accent-subtle: rgba(93, 135, 8, 0.09);
+  --accent-glow: rgba(93, 135, 8, 0.32);
 
   --secondary: #007acc;
   --secondary-light: #3399dd;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.1;
-  color: var(--foreground);
+  color: inherit;
 }
 
 h1 {
@@ -313,6 +313,17 @@ p {
 
 .transition-bounce {
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Text balance for better readability */

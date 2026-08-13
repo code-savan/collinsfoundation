@@ -79,7 +79,7 @@ const Focus = () => {
             {/* Top accent bar */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#8dc220] via-[#a8d93f] to-[#8dc220]" />
 
-            <div className="p-10 lg:p-12">
+            <div className="p-8 lg:p-12">
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
                 <div className="flex-1">
                   <div
@@ -137,7 +137,7 @@ const Focus = () => {
             {/* Top accent bar */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#007acc] via-[#3399dd] to-[#007acc]" />
 
-            <div className="p-8 lg:p-10 h-full flex flex-col">
+            <div className="p-8 lg:p-12 h-full flex flex-col">
               <div
                 className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500"
                 style={{ backgroundColor: cards[1].colorLight }}
@@ -189,7 +189,7 @@ const Focus = () => {
             {/* Top accent bar */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#f9a825] via-[#fbbf24] to-[#f9a825]" />
 
-            <div className="p-10 lg:p-12">
+            <div className="p-8 lg:p-12">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
                 <div className="flex-1">
                   <div

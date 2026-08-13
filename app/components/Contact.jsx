@@ -32,7 +32,7 @@ const Contact = () => {
 
       <div className="relative grid md:grid-cols-2">
         {/* Contact Info + Form */}
-        <div className="p-8 sm:p-12 md:p-16 lg:p-20 flex flex-col justify-center">
+        <div className="p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -109,34 +109,50 @@ const Contact = () => {
             className="space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label className="mb-2 block text-sm font-semibold text-white" htmlFor="contact-name">Your name</label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Jane Doe"
+                  className="w-full px-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
+                />
+              </div>
+              <div>
+                <label className="mb-2 block text-sm font-semibold text-white" htmlFor="contact-email">Your email</label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                  className="w-full px-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-semibold text-white" htmlFor="contact-subject">Subject</label>
               <input
+                id="contact-subject"
                 type="text"
-                name="name"
-                required
-                placeholder="Your name"
-                className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
-              />
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Your email"
-                className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
+                name="subject"
+                placeholder="Partnership enquiry"
+                className="w-full px-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
               />
             </div>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 transition-colors"
-            />
-            <textarea
-              name="message"
-              required
-              rows={4}
-              placeholder="Your message"
-              className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 resize-none transition-colors"
-            />
+            <div>
+              <label className="mb-2 block text-sm font-semibold text-white" htmlFor="contact-message">Your message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                required
+                rows={4}
+                placeholder="Tell us how you would like to help"
+                className="w-full px-4 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none font-inter text-white placeholder:text-gray-500 resize-none transition-colors"
+              />
+            </div>
             <motion.button
               type="submit"
               disabled={status === 'loading'}

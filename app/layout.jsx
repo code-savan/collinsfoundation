@@ -1,5 +1,8 @@
 import { Inter, Roboto } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import MotionProvider from "./components/MotionProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -44,7 +47,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${roboto.variable} antialiased`}
       >
-        {children}
+        <div id="top" className="sr-only" />
+        <MotionProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </MotionProvider>
         <Analytics />
       </body>
     </html>
